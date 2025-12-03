@@ -76,6 +76,8 @@ export default async function Home() {
     redirect("/dashboard");
   }
 
+  redirect("/login");   // 로그인 안 됐으면 무조건 로그인 페이지로
+
   return (
       <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
